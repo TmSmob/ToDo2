@@ -46,6 +46,7 @@ namespace ToDo2
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
@@ -70,15 +71,20 @@ namespace ToDo2
         private void timer1_Tick(object sender, EventArgs e)
         {
             if(a == 0)
-            this.BackColor = Color.Red;
+            {
+                this.BackColor = Color.Red;
+                a++;
+            }
             else if(a == 1)
-            this.BackColor = Color.Blue;
+            {
+                this.BackColor = Color.Blue;
+                a++;
+            }
             else
             {
             this.BackColor = Color.Green;
                 a = 0;
             }
-            a++;
         }
     }
 }
