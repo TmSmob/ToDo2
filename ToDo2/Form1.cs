@@ -21,5 +21,10 @@ namespace ToDo2
         {
             label1.Text = "Merhaba Ahmet";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Gule Gule Ahmet";
+        }
     }
 }
